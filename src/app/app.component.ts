@@ -32,7 +32,7 @@ export class AppComponent {
     this.data[i].msgValid = false;
 
     if (this.onlineOffline) {
-      this.http.get("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=ac7740bbb6152f6b860b18c4fabadf4d&units=metric")
+      this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=ac7740bbb6152f6b860b18c4fabadf4d&units=metric")
         .subscribe(
           (res) => {
             let weatherCity: any = {};
